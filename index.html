@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <h1><title>Survey form</title></h1>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <script  src="js/index.js"></script>
+
     <header>
-      <h1><title>Survey Form</title>Survey Form</h1>
-      <p>"What do you thing about our services"</p>
+      <h1 id="title"><title>Survey Form</title>Survey Form</h1>
+      <p id="description" > "What do you thing about our services"</p>
     </header>
     <main>
-      <form id="Survey Form">
-l       <label for="name" id="name-label">Please enter your name:</label>
+      <form id="survey-form">
+l       <label id="name-label" for="name" >Please enter your name:</label>
         <input id="name" type="text" required placeholder="Alejandro Maggioni">
 
         <hr>
-        <label for="email" id="email-label">Please enter your email:</label>
+        <label id="email-label" for="email" >Please enter your email:</label>
         <input id="email" type="email" required placeholder="pizza@pizza.com">
         <hr>
 
-        <label for="number" id="number-label">Please enter your age</label>
-        <input id="number" type="number"  min="$" max="120"
-        placeholder="age" required>
+        <label id="number-label" for="number" >Please enter your age</label>
+        <input id="number" type="number"  min="0"  max="120" placeholder="age" required=false>
         <hr>
 
         <label for="dropdown">Cake or Pizza or Sandwich</label>
@@ -32,14 +49,15 @@ l       <label for="name" id="name-label">Please enter your name:</label>
         </select>
         <hr>
         <textarea name="name" rows="8" cols="80">Please write your reviews</textarea>
-        
-        <input type="submit">
 
-
-
+        <input type="submit" id="submit">
 
       </form>
     </main>
+
+  </body>
+
+
 
   </body>
 </html>
